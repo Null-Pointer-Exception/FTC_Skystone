@@ -18,7 +18,7 @@ public class Matrix {
         return res;
     }
 
-    public double[][] subtracto(double[][] a, double [][] b){
+    public double[][] subtractoo(double[][] a, double [][] b){
         int r1 = a.length;
         int c1 = a[0].length;
         int r2 = b.length;
