@@ -1,7 +1,19 @@
 package org.firstinspires.ftc.teamcode.Util;
 
+
 public class Matrix {
-    public double[][] add(double[][] a, double [][] b){
+    public static double[][] cMult(double k, double[][] a){
+        double[][] res = new double[a.length][a[0].length];
+        
+        for(int i = 0; i < a.length; i++){
+            for(int j = 0; j < a[0].length; i++){
+                res[i][j] = k * a[i][j];
+            }
+        }
+        return res;
+    } 
+    
+    public static double[][] add(double[][] a, double [][] b){
         int r1 = a.length;
         int c1 = a[0].length;
         int r2 = b.length;
@@ -17,8 +29,8 @@ public class Matrix {
         }
         return res;
     }
-
-    public double[][] subtract(double[][] a, double [][] b){
+    
+    public static double[][] subtract(double[][] a, double [][] b){
         int r1 = a.length;
         int c1 = a[0].length;
         int r2 = b.length;
@@ -34,8 +46,8 @@ public class Matrix {
         }
         return res;
     }
-
-    public double[][] multiply(double[][] a, double [][] b){
+    
+    public static double[][] multiply(double[][] a, double [][] b){
         int r1 = a.length;
         int c1 = a[0].length;
         int r2 = b.length;
