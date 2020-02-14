@@ -13,6 +13,6 @@ public class Odometry {
         };
         
         double[] result = Matrix.
-        return null;
+        return result;
     }
 }
