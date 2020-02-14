@@ -12,7 +12,7 @@ public class Odometry {
             {-1, 1, 0}
         };
         
-        double[] result = Matrix(Matrix.cMult((Radius / (2 * y0), A)), angles);
+        double[] result = Matrix(Matrix.cMult((RADIUS / (2 * y0), A)), angles);
         return result;
     }
 }
